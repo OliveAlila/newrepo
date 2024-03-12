@@ -1,107 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./public/css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <title>FreshCart</title>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>FreshCart</title>
+</head>
+
+<body>
+    <div class="top">
+        <span>Super Value Deals - Save more with coupons</span>
+        <div>
+            <i class="fa-solid fa-flag"></i>
+            <span>English</span>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="content">
         <header>
-            <div>
-                <div>
-                    <i class="fa-solid fa-cart-shopping"></i>
+            <div class="header-top flex">
+                <div class="flex">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
                     <h1>FreshCart</h1>
                 </div>
-                <div>
-                    <input type="text">
-                    <a href="">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
+                <div class="header-top-middle flex">
+                    <div class="search-bar flex">
+                        <input type="text" placeholder="Search for products...">
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                    <div class="location flex">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Location</span>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Location</span>
-                </div>
-                <div>
+                <div class="header-icons flex">
                     <div>
-                        <i class="fa-regular fa-heart"></i>
-                        <span>5</span>
+                        <i class="fa-regular fa-heart favorites-icon"></i>
+                        <span class="favorites-number badges">5</span>
                     </div>
                     <i class="fa-regular fa-user"></i>
                     <div>
-                        <i class="fa-solid fa-bag-shopping"></i>
-                        <span>1</span>
+                        <i class="fa-solid fa-bag-shopping shopping-icon"></i>
+                        <span class="badges shopping-number">1</span>
                     </div>
                 </div>
             </div>
             <!-- NavBar Start -->
             <nav>
-                <ul>
-                    <li>
+                <ul class="nav">
+                    <li class="departments">
                         <a href="">
-                            <img src="" alt="">
+                            <i class="fa-solid fa-list"></i>
                             <span>All Departments</span>
                         </a>
                     </li>
                     <li>
                         <a href="">Home</a>
-                        <select name="" id="">
+                        <select disabled name="" id="">
                             <option value=""></option>
                         </select>
                     </li>
                     <li>
                         <a href="">Shop</a>
-                        <select name="" id="">
+                        <select disabled name="" id="">
                             <option value=""></option>
                         </select>
                     </li>
                     <li>
                         <a href="">Stores</a>
-                        <select name="" id="">
+                        <select disabled name="" id="">
                             <option value=""></option>
                         </select>
                     </li>
                     <li>
                         <a href="">Mega menu</a>
-                        <select name="" id="">
+                        <select disabled name="" id="">
                             <option value=""></option>
                         </select>
                     </li>
                     <li>
                         <a href="">Pages</a>
-                        <select name="" id="">
+                        <select disabled name="" id="">
                             <option value=""></option>
                         </select>
                     </li>
                     <li>
                         <a href="">Account</a>
-                        <select name="" id="">
+                        <select disabled name="" id="">
                             <option value=""></option>
                         </select>
                     </li>
                     <li>
                         <a href="">Docs</a>
-                        <select name="" id="">
-                            <option value=""></option>
-                        </select>
                     </li>
                 </ul>
             </nav>
             <!-- NavBar End -->
         </header>
         <!-- Hero Section Start -->
-        <section>
-            <h2>Opening sale discount</h2>
-            <p>SuperMarket Daily Fresh Grocery</p>
-            <span>Introduced a new model for online grocery shopping and convenient home delivery</span>
-            <button>Shop Now
+        <section class="hero">
+            <div>
+                <h2 class="hero-headline">Opening sale discount 50%</h2>
+                <p class="hero-title">SuperMarket Daily Fresh Grocery</p>
+                <span class="hero-body">Introduced a new model for online grocery shopping and convenient home delivery</span>
+            </div>
+            <button class="cta">
+                <span>Shop Now</span>
                 <i class="fa-solid fa-arrow-right-long"></i>
             </button>
-            <div>
-                <span>.</span>
-                <span>.</span>
+            <div class="hero-indicators">
+                <span class="active">.</span>
+                <span class="inactive">.</span>
             </div>
         </section>
         <!-- Hero Section End -->
@@ -144,5 +157,7 @@
             </div>
         </section>
         <!-- Featured Section End -->
-    </body>
+    </div>
+</body>
+
 </html>
